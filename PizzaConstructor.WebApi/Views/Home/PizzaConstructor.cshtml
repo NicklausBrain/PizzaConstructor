@@ -1,0 +1,15 @@
+﻿@Styles.Render("~/Content/font-awesome.css")
+
+@{
+    ViewBag.Title = "PizzaConstructor";
+}
+
+<div id="PizzaConstructorMain"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ReactDOM.render(
+            React.createElement(OrderBuilder, {action:'constructor'}),
+            document.getElementById('PizzaConstructorMain'));
+    });
+</script>

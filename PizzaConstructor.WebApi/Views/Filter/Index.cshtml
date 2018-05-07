@@ -1,0 +1,19 @@
+﻿@using PizzaConstructor.Entities
+@model IEnumerable<PizzaConstructor.Entities.Ingredient>
+@{
+    ViewBag.Title = "Tabs";
+}
+@foreach (Ingredient ing in Model)
+{
+    <ul>
+        <li> @ing.Name</li>
+    </ul>
+}
+@*<div id="tabs"></div>
+<div id="content"></div>
+<h2>Index</h2>*@
+
+@*<div class="content">
+        <h2 class="title">Tabs</h2>
+        <div id="tabs"></div>
+    </div>*@

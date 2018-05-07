@@ -1,0 +1,528 @@
+﻿html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 75px;
+    min-height: 100%;
+    position: relative;
+}
+
+.my-header {
+    padding: 0 50px;
+}
+
+#main-content {
+    margin: 0 auto;
+    min-height: 65vh;
+}
+
+#first-parallax {
+    margin-top: -75px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#second-parallax {
+    height: 400px;
+}
+
+#middle-parent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#logo-img {
+    height: 40px;
+}
+
+#username {
+    padding-top: 6px;
+}
+
+.navbar-collapse {
+    padding-top: 10px;
+    border-color: white;
+}
+
+    .navbar-collapse.in {
+        overflow-y: visible;
+    }
+
+.navbar-toggle {
+    border: 1px solid #fff;
+    margin-top: 15px;
+    background: none;
+}
+
+    .navbar-toggle:hover {
+        background: #555;
+    }
+
+    .navbar-toggle:active {
+        background: #555;
+    }
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    border: 1px solid #fff;
+}
+
+.navbar-nav {
+    margin: 5px 0;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,.7);
+    font-size: 20px;
+    color: white;
+}
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    background-image: url("../Images/footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+}
+
+    .footer a {
+        color: white;
+    }
+
+/*-------------------------------------------*/
+
+
+.template-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.template {
+    padding: 20px;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+
+    .template img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .template span, .template p {
+        font-size: 24px;
+    }
+
+    .template a {
+        text-decoration: none;
+    }
+
+.hovereffect {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+    .hovereffect .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        padding: 20px 20px;
+        z-index: 100;
+    }
+
+    .overlay p{
+        margin-top: 50%;
+    }
+
+    .hovereffect img {
+        display: block;
+        position: relative;
+        max-width: none;
+        width: calc(100% + 20px);
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(-10px,0,0);
+        transform: translate3d(-10px,0,0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .hovereffect:hover {
+        background: rgba(0, 0, 0, .6);
+    }
+
+        .hovereffect:hover img {
+            opacity: 0.4;
+            filter: alpha(opacity=40);
+        }
+
+    .hovereffect h2 {
+        text-transform: uppercase;
+        color: #000;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        overflow: hidden;
+        padding: 0.5em 0;
+        background-color: transparent;
+    }
+
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2 {
+    color: #fff;
+}
+
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/*------------------------------------------------------*/
+
+.myAlert-top {
+    position: fixed;
+    top: 80px;
+    text-align: center;
+    z-index: 100;
+}
+
+.alert {
+    display: none;
+}
+
+.vertical-center {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.my-button a, .my-button button {
+    background-color: #dfbe70;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.my-button a:hover, .my-button button:hover {
+    background-color: #3a3537;
+}
+
+/*
+    --- STYLES FOR INGREDIENT TABS ---
+*/
+.pointer {
+    cursor: pointer;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    height: 70vh;
+}
+
+
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: rgba(0,0,0,.3);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 8px 10px;
+        transition: 0.3s;
+        font-size: 14px;
+    }
+
+
+        /* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: rgba(0,0,0,.7);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-color: #ccc;
+    border-top: none;
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+}
+
+/* Style the img inside tabcontent */
+.imageTabContent img {
+    width: 100px;
+    height: 100px;
+}
+
+.tab h5 {
+    font-size: 20px;
+}
+
+/*
+    --- STYLES FOR PIZZACONSTRUCTOR ---
+*/
+
+.PizzaConstructorFull {
+    margin: auto;
+    min-width: 370px;
+    height: 70vh;
+    border: 2px solid #000;
+    background-size: cover;
+    position: relative;
+}
+
+    .PizzaConstructorFull img {
+        margin: auto;
+        width: 65%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+/*---------------Pizza Constructor by Yarik-----------------*/
+
+.pizza-constructor:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../Images/wood.jpg) center center;
+    opacity: .8;
+}
+
+.pizza-constructor.section {
+    padding: 0;
+}
+
+.pizza-constructor h4 {
+    color: white;
+    margin: 10px 0;
+}
+
+.pizza-constructor .row:last-of-type {
+    margin-bottom: 50px;
+}
+
+.PizzaConstructorPreview {
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    position: relative;
+}
+
+.PizzaConstructorPreview img {
+    margin-left: 15px;
+    width: 190px;
+    height: 150px;
+    position: absolute;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#pizza-ingr-list {
+    background-color: rgba(0, 0, 0, .3);
+    margin-left: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+    #pizza-ingr-list .ingrid-item {
+        padding-left: 20px
+    }
+
+#pizza-ingr {
+    background-color: rgba(0, 0, 0, .3);
+    margin-right: 15px;
+    color: white;
+}
+
+#pizza-ingr-list i {
+    padding-left: 10px;
+}
+
+.tab {
+    text-align: center;
+}
+
+.tablinks {
+    display: inline-block;
+}
+
+.pizza-name p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.imageTabContent {
+    border-bottom: 1px solid white;
+}
+
+.modal-footer .btn {
+    background-color: #dfbe70;
+}
+
+.modal-footer .btn:hover {
+    background-color: #3a3537;
+    color: white;
+}
+
+.pizza-constructor input[type=text]:not(.browser-default) {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#ingr-list-content {
+    overflow-y: hidden;
+    height: 70vh;
+}
+
+#ingr-list-content>div {
+    overflow-y: auto;
+    height: 85%;
+}
+
+/*--------------Admin box-----------------*/
+
+.admin-box {
+    text-align: center;
+}
+
+.order-item {
+    display: inline-block;
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.order-item hr{
+    margin: 10px 0;
+}
+
+.order-item .caption {
+    height: 350px;
+    min-width: 190px;
+}
+
+.order-item .ingeds {
+    height: 40%;
+    overflow-y: auto;
+}
+
+#price-label {
+    padding: 0 5px;
+}
+    
+.order-item select {
+    margin-bottom: 15px;
+}
+
+.order-item button {
+    padding: 0;
+}
+
+.order-item row {
+    margin-bottom: 0;
+}
+
+/*---------------404 page not found------------*/
+
+#smth {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    margin-top: -75px;
+}
+
+#img-404 {
+    background-image: url("../Images/NotFound404.png");
+    width: 410px;
+  height: 240px;
+  padding: 20px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
+}

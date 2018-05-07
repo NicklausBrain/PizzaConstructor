@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.Entities", "PizzaConstructor.Entities\PizzaConstructor.Entities.csproj", "{1D3302DB-6909-406F-927B-BF239AD787E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.WebApi", "PizzaConstructor.WebApi\PizzaConstructor.WebApi.csproj", "{C45F3A11-0B1D-4BED-AAA3-20DB1456F5BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.WebApi.Tests", "PizzaConstructor.WebApi.Tests\PizzaConstructor.WebApi.Tests.csproj", "{705D88A8-BD92-4CDA-A497-C225DD5B931F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.Data", "PizzaConstructor.Data\PizzaConstructor.Data.csproj", "{E9E6CED4-EEDD-4A6F-A7FD-4C9E2C148126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.Core", "PizzaConstructor.Core\PizzaConstructor.Core.csproj", "{965202C6-FED4-4BBD-88B7-44AB2CDD4BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.Data.Interfaces", "PizzaConstructor.Data.Interfaces\PizzaConstructor.Data.Interfaces.csproj", "{04ECF254-7D1D-408A-972E-B5A5424B3614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PizzaConstructorTests", "PizzaConstructorTests", "{A79C1E44-44EE-4279-B0F9-808B86FDEC57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaConstructor.Core.Tests", "PizzaConstructor.Core.Tests\PizzaConstructor.Core.Tests.csproj", "{BAAEB4CC-E170-4197-B3C0-2B3854400CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D3302DB-6909-406F-927B-BF239AD787E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D3302DB-6909-406F-927B-BF239AD787E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D3302DB-6909-406F-927B-BF239AD787E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D3302DB-6909-406F-927B-BF239AD787E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45F3A11-0B1D-4BED-AAA3-20DB1456F5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45F3A11-0B1D-4BED-AAA3-20DB1456F5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45F3A11-0B1D-4BED-AAA3-20DB1456F5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45F3A11-0B1D-4BED-AAA3-20DB1456F5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705D88A8-BD92-4CDA-A497-C225DD5B931F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705D88A8-BD92-4CDA-A497-C225DD5B931F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705D88A8-BD92-4CDA-A497-C225DD5B931F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705D88A8-BD92-4CDA-A497-C225DD5B931F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9E6CED4-EEDD-4A6F-A7FD-4C9E2C148126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E6CED4-EEDD-4A6F-A7FD-4C9E2C148126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E6CED4-EEDD-4A6F-A7FD-4C9E2C148126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E6CED4-EEDD-4A6F-A7FD-4C9E2C148126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965202C6-FED4-4BBD-88B7-44AB2CDD4BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965202C6-FED4-4BBD-88B7-44AB2CDD4BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965202C6-FED4-4BBD-88B7-44AB2CDD4BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965202C6-FED4-4BBD-88B7-44AB2CDD4BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04ECF254-7D1D-408A-972E-B5A5424B3614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04ECF254-7D1D-408A-972E-B5A5424B3614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04ECF254-7D1D-408A-972E-B5A5424B3614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04ECF254-7D1D-408A-972E-B5A5424B3614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAEB4CC-E170-4197-B3C0-2B3854400CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAEB4CC-E170-4197-B3C0-2B3854400CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAEB4CC-E170-4197-B3C0-2B3854400CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAEB4CC-E170-4197-B3C0-2B3854400CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BAAEB4CC-E170-4197-B3C0-2B3854400CE2} = {A79C1E44-44EE-4279-B0F9-808B86FDEC57}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {801A3761-63D1-4B62-993D-28BFCE59B6D2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bershadskiy.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PizzaConstructor.Entities\\PizzaConstructor.Entities.csproj
+		SccProjectName1 = PizzaConstructor.Entities
+		SccLocalPath1 = PizzaConstructor.Entities
+		SccProjectUniqueName2 = PizzaConstructor.WebApi\\PizzaConstructor.WebApi.csproj
+		SccProjectName2 = PizzaConstructor.WebApi
+		SccLocalPath2 = PizzaConstructor.WebApi
+		SccProjectUniqueName3 = PizzaConstructor.WebApi.Tests\\PizzaConstructor.WebApi.Tests.csproj
+		SccProjectName3 = PizzaConstructor.WebApi.Tests
+		SccLocalPath3 = PizzaConstructor.WebApi.Tests
+		SccProjectUniqueName4 = PizzaConstructor.Data\\PizzaConstructor.Data.csproj
+		SccProjectName4 = PizzaConstructor.Data
+		SccLocalPath4 = PizzaConstructor.Data
+		SccProjectUniqueName5 = PizzaConstructor.Core\\PizzaConstructor.Core.csproj
+		SccProjectName5 = PizzaConstructor.Core
+		SccLocalPath5 = PizzaConstructor.Core
+		SccProjectUniqueName6 = PizzaConstructor.Data.Interfaces\\PizzaConstructor.Data.Interfaces.csproj
+		SccProjectName6 = PizzaConstructor.Data.Interfaces
+		SccLocalPath6 = PizzaConstructor.Data.Interfaces
+		SccProjectUniqueName7 = PizzaConstructor.Core.Tests\\PizzaConstructor.Core.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = PizzaConstructor.sln
+		SccProjectName7 = PizzaConstructor.Core.Tests
+		SccLocalPath7 = PizzaConstructor.Core.Tests
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bershadskiy.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PizzaConstructor.Entities\\PizzaConstructor.Entities.csproj
+		SccProjectName1 = PizzaConstructor.Entities
+		SccLocalPath1 = PizzaConstructor.Entities
+		SccProjectUniqueName2 = PizzaConstructor.Data\\PizzaConstructor.Data.csproj
+		SccProjectName2 = PizzaConstructor.Data
+		SccLocalPath2 = PizzaConstructor.Data
+		SccProjectUniqueName3 = PizzaConstructor.WebApi.Tests\\PizzaConstructor.WebApi.Tests.csproj
+		SccProjectName3 = PizzaConstructor.WebApi.Tests
+		SccLocalPath3 = PizzaConstructor.WebApi.Tests
+	EndGlobalSection
+EndGlobal

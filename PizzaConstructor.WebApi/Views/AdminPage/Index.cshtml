@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Admin Panel";
+}
+
+<h2 class="row center">Orders manager</h2>
+
+<div id="odrers" class="section white"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ReactDOM.render(
+            React.createElement(AdminBox),
+            document.getElementById('odrers'));
+    });
+</script>

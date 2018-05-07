@@ -1,0 +1,1 @@
+﻿ReactDOM.render(<PizzaConstructorComponent />, document.getElementById("PizzaConstructorTest"));

@@ -1,0 +1,34 @@
+﻿
+@if (Request.IsAuthenticated)
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <li id="username" class="hidden-sm hidden-xs">@User.Identity.Name</li>
+            <li><a onclick="getElementById('log-out-hidden').click();" href="#">Log out</a></li>
+            @using (Html.BeginForm("LogOut", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <button id="log-out-hidden" class="hidden" type="submit"></button>
+            }
+        </li>
+    </ul>
+}
+else
+{
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <li><a onclick="getElementById('log-in-hidden').click();" href="#">
+                    Log in
+                    <img src="~/Content/Images/google-plus.png"/>
+                </a>
+            </li>
+            @using (Html.BeginForm("GoogleLogin", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="returnUrl" value=@ViewBag.returnUrl/>
+                <button id="log-in-hidden" class="hidden" type="submit"></button>
+            }
+        </li>
+    </ul>
+}

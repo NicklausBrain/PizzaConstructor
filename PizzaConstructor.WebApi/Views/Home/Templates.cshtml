@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Templates";
+}
+
+<div id="templates-content" class="section white"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ReactDOM.render(
+            React.createElement(OrderBuilder, {action:'templates'}),
+            document.getElementById('templates-content'));
+    });
+</script>

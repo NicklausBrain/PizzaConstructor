@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Your Orders History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div align="center">
+    <h3>@User.Identity.Name Ordered Pizzas</h3>
+</div>
+<div id="pizzaItems-content" class="section white"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ReactDOM.render(
+            React.createElement(OrdersHistory),
+            document.getElementById('pizzaItems-content'));
+    });
+</script>

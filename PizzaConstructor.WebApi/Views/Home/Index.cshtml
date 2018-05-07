@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Pizza Constructor";
+}
+
+<div class="myAlert-top alert col-md-6 col-md-offset-3 alert-@ViewBag.Status" >
+    <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
+    <strong>@ViewBag.StatusMessage</strong>
+</div>
+
+<div class="parallax-container" id="first-parallax">
+    <div class="section no-pad-bot vertical-center">
+        <div class="container">
+            <h1 class="header center">Pizza Constructor</h1>
+            <div class="row center">
+                <h4>make your pizza dreams come true</h4>
+            </div>
+        </div>
+    </div>
+    <div class="parallax">
+        <img src="~/Content/Images/background-1.jpg">
+    </div>
+</div>
+
+<div class="section white">
+    <div class="row container">
+        <h4 class="header center">About us</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive" src="~/Content/Images/about-us.jpg" />
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam scelerisque id nunc nec volutpat. Etiam pellentesque
+                    tristique arcu, non consequat magna fermentum ac. Cras ut ultricies
+                    eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros.
+                    Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus.
+                    Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla
+                    imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida
+                    ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante
+                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="parallax-container" id="second-parallax">
+    <div class="parallax"><img src="~/Content/Images/background-2.jpg"></div>
+</div>
+
+<div class="section white" id="pizza-constructor-link">
+    <div class="row container" id="middle-parent">
+        <div class="col-md-5 col-md-offset-1 my-button">
+            @Html.ActionLink("Create your awasome pizza", "PizzaConstructor",null,new {@class = "btn-info btn-large my-button" })
+        </div>
+        <div class="col-md-5 ">
+            <img class="responsive-img" src="~/Content/Images/pizza.png" />
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.parallax').parallax();
+        if ($(".myAlert-top strong").text() != "") {
+            $(".myAlert-top").fadeIn();
+            setTimeout(function () {
+                $(".myAlert-top").fadeOut();
+            }, 2000);
+        }
+    });
+</script>
